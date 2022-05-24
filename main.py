@@ -30,7 +30,7 @@ ket_one = np.array([0,1])
 max_natural = 100
 rotation_generators = 0.5 * np.array([
 [[0.,1.],[1.,0.]],
-[[0.,-i],[i,0.]],
+[[0.,-icomplex],[icomplex,0.]],
 [[1.,0.],[0.,-1.]]
 ])
 
