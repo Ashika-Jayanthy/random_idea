@@ -6,6 +6,7 @@ def prime_upper(n):
 # options: 1) represent by roots + relationship between roots (over different rings). are galois groups fundamental? if not,
 # find a different representation
 # 2) something else  <- keep thinking.
+# 2a) how to order sequence of polynomials. with index set primes ordered by size less than n; or for number fields prime ideals (how to order?).
 
 class PolynomialRepresentations():
     def __init__(self,input_graph, degree=1, ring_type="Z", representation_type=''):
@@ -17,14 +18,17 @@ class PolynomialRepresentations():
 
         return representation
 
-class RandomGraphs():
-    def __init__(self,average_degree,n_nodes,n_edges):
+class Graphs():
+    #
+    def __init__(self,average_degree, graph_type="random"):
         self.average_degree = average_degree
-        self.n_nodes = n_nodes
-        self.n_edges = n_edges
+        self.n_nodes = ceil(np.random.normal(self.average_degree,size=1))
+        self.G = {}
+        for i in range(self.n_nodes):
+            self.G[i] = []
 
-    def generate_random_graph(self):
-        return
+    def generate_random_graph(self, values):
 
-    def polynomial_from_graph(self):
-        return
+        for i in range(self.n_nodes):
+            self.
+        return self.G
