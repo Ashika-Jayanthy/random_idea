@@ -20,15 +20,13 @@ class PolynomialRepresentations():
 
 class Graphs():
     #
-    def __init__(self,average_degree, graph_type="random"):
-        self.average_degree = average_degree
-        self.n_nodes = ceil(np.random.normal(self.average_degree,size=1))
+    def __init__(self,average_nnodes, graph_type="random"):
+        self.average_nnodes = average_nnodes
+        self.n_nodes = ceil(np.random.normal(self.average_nnodes,size=1))
         self.G = {}
         for i in range(self.n_nodes):
             self.G[i] = []
 
     def generate_random_graph(self, values):
 
-        for i in range(self.n_nodes):
-            self.
         return self.G
