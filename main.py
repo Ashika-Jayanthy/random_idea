@@ -1,12 +1,28 @@
 import numpy as np
-import scipy as sp
 import mendeleev as mdl
 import random
 import collections
 from max_entropy import *
+from scipy.linalg import expm
+from scipy.special import bernoulli
+from scipy.special import gamma
+from scipy.special import zeta
+
+
+####
+
+
+def reimann_functional(z):
+    return (2**z * np.pi**z-1 * np.sin(np.pi*z/2.) * gamma(1-z) * zeta(1-z))
+
+def coprime_probability(set_of_values):
+    # euler's formula
+    return 1./zeta(len(set_of_values))
+
+def chinese_remainder_solve():
+    return
 
 icomplex = complex(0,1)
-# check again later
 
 ket_zero = np.array([1,0])
 ket_one = np.array([0,1])
