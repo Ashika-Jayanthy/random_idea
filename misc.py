@@ -19,14 +19,12 @@ class PolynomialRepresentations():
         return representation
 
 class Graphs():
-    #
-    def __init__(self,average_nnodes, graph_type="random"):
-        self.average_nnodes = average_nnodes
-        self.n_nodes = ceil(np.random.normal(self.average_nnodes,size=1))
+    def __init__(self, nodes, edges):
+        self.nodes = nodes
+        self.edges = edges
         self.G = {}
-        for i in range(self.n_nodes):
-            self.G[i] = []
 
-    def generate_random_graph(self, values):
-
+    def generate_graph(self, values):
+        for i in range(len(self.n_nodes)):
+            self.G[nodes[i]] = self.edges[i]
         return self.G
