@@ -90,19 +90,6 @@ class Perceptron():
         return self.perceptron_volume
 
 
-class Particles(Perceptron):
-    def __init__(self):
-
-
-    def map_to_element(self):
-        mdl.
-        return
-
-    @property
-    def spin_angular_momentum(self):
-        return
-
-
 class C2:
     def __init__(self, y = np.array([[complex(0,0), complex(0,0)], [complex(1,0), complex(0,0)]])):
         self.y = y
