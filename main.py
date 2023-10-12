@@ -47,10 +47,10 @@ def heaviside_smooth(x,k=1):
     # logistic
     return 1. / 1. + np.exp(-2*k*x)
 
-def rho_function(weights, dims,quantum_perceptron_type):
-    if quantum_perceptron_type == "Ising":
+def rho_function(weights, dims,perceptron_type):
+    if perceptron_type == "Ising":
         y = np.multiply(np.heaviside(weights - 1) + np.heaviside(weights + 1), axis=1)
-    elif quantum_perceptron_type == "Spherical":
+    elif perceptron_type == "Spherical":
         y = np.heaviside(np.absolute(weights) **2 - dims)
     return  y / np.sum(y)
 
