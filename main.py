@@ -76,9 +76,9 @@ class Perceptron():
         return
 
     def run_all(self):
-        self.learn_weights
+        self.learn_weights()
         self.X = (np.absolute(np.vdot(self.input_vector, self.weights))**2 - self.threshold) / self.hilbert_space_dim
-        self.calculate_volume
+        self.calculate_volume()
         return self.perceptron_volume
 
 
