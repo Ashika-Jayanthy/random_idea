@@ -1,5 +1,4 @@
 import numpy as np
-import mendeleev as mdl
 import random
 import collections
 from max_entropy import *
