@@ -79,7 +79,7 @@ class Perceptron():
         return
 
     def calculate_volume(self):
-        # delta_x = 1
+        # wrong
         self.perceptron_volume = np.sum(np.multiply(heaviside_smooth(self.X))*rho_function(self.weights))
         return
 
